@@ -1,0 +1,20 @@
+spring:
+  datasource:
+    hikari:
+      jdbc-url: jdbc:mysql://localhost:3306/jpa
+      username: jpauser
+      password: jpauser
+      driver-class-name: com.mysql.cj.jdbc.Driver
+  second-datasource:
+    hikari:
+      jdbc-url: jdbc:mysql://localhost:3306/jpa2
+      username: jpauser
+      password: jpauser
+      driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+        hbm2ddl:
+          auto: create
